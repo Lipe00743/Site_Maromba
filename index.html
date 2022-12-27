@@ -4,85 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DECA - TREMBOLONA</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/danger.ico" type="image/x-icon">
+    <title>Atenção</title>
     <style>
-        body{
-            background-color: #6c82e2;
-            font: normal 14pt Cascadia Code;
-        }
-        mark{
-            background-color: rgba(0, 0, 0, 0.356);
+       body{   
+            font: normal 16pt Arial;
+            background-color: black;
+            text-align: center;
             color: white;
-        }        
+       }
+       input#botao{
+            font: bold 18pt Arial;
+       }
     </style>
 </head>
-<body>
-    
-    <h1>OI FRANGO!</h1>
-        <p><mark><abbr title="Milho, seu frango">Quando você tiver um peitoral desse...</abbr></mark></p>
-        <img src="imagens/pc/vovo.jpg" alt="vovo">
-        <br>
-        <audio src="audio/vovo.mp3" controls></audio>
-        <hr>
-    <h1>FEIJÃO PURO</h1>
-        <p><mark><abbr title="Eu não vou enganar o povo de novo">A gente come só feijão puro</abbr></mark></p>
-        <picture>
-            <source media="(max-width: 1000px)" srcset="imagens/celular/lula-cel.jpg" type="image/jpg">
-            <img src="imagens/pc/lula.jpg" alt="feijão">
-        </picture>
-        <br>
-        <audio src="audio/lula.mp3" controls></audio>
-        <hr>
-    <h1>XIGA</h1>
-        <p><mark><abbr title="Quem não como não cresce">150kg de nescoball</abbr></mark></p>
-        <picture>
-            <source media="(max-width: 1000px)" srcset="imagens/celular/giga-cel.jpg" type="image/jpg">
-            <img src="imagens/pc/giga.jpg" alt="xiga">
-        </picture>
-        <br>
-        <audio src="audio/giga.mp3" controls></audio>
-        <hr>
-    <h1>SAPO NA LAGOA</h1>
-        <p><mark><abbr title="Tá facil, bora">Iê iê aaaahh aaaahh</abbr></mark></p>
-        <picture>
-            <source media="(max-width: 1000px)" srcset="imagens/celular/renato-cel.jpg" type="image/jpg">
-            <img src="imagens/pc/renato.jpg" alt="sapo">
-        </picture>
-        <br>
-        <audio src="audio/renato.mp3" controls></audio>
-        <hr>
-    <h1>DIETA É TUDO</h1>
-        <p><mark><abbr title="Como vocês podem ver, resultado tá dando">Até tentei, mas realmente...</abbr></mark></p>
-        <picture>
-            <source media="(max-width: 1000px)" srcset="imagens/celular/marcao-cel.jpg" type="image/jpg">
-            <img src="imagens/pc/marcao.jpg" alt="dieta">
-        </picture>
-        <br>
-        <audio src="audio/marcao.mp3" controls></audio>
-        <hr>
-    <h1>COÉ TADALA</h1>
-        <p><mark><abbr title="Tu acabou de acordar velho">Sangue de soldado russo</abbr></mark></p>
-        <picture>
-            <source media="(max-width: 1000px)" srcset="imagens/celular/tadala-cel.jpg" type="image/jpg">
-            <img src="imagens/pc/tadala.jpg" alt="tadala">
-        </picture>
-        <br>
-        <audio src="audio/tadala.mp3" controls></audio>
-        <hr>
-    <h1>LIGHT WEIGHT</h1>
-        <p><mark><abbr title="LegPress com 1000KG">Ah carinha dele</abbr></mark></p>
-        <picture>
-            <source media="(max-width: 1000px)" srcset="imagens/celular/ronnie-cel.jpg" type="image/jpg">
-            <img src="imagens/pc/ronnie.jpg" alt="ronnie_g">
-        </picture>        
-        <br>
-        <audio src="audio/ronnie.mp3" controls></audio>
 
-        
+<body>
+    <h1>Cuidado você está prestes a ver aberrações!</h1>
+    <p>Para continuar confirme abaixo.</p>
+    <input type="button" value="Clique aqui" id="botao" onclick="continuar()">
+
     <script>
-        alert('Cuidado! Você está prestes a ver um CONTEÚDO PROIBIDO em 30 países!')
-        confirm('Tem certeza do que está fazendo?')
+        var botao = document.getElementById('botao')
+        function continuar(){
+            window.open('conteudo.html', 'conteudo_site')
+            window.close()
+        }
+        
+
     </script>
+
 </body>
+
 </html>
